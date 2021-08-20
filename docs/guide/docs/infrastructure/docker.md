@@ -147,7 +147,7 @@ services:
       - "3000:3000"
 
   botpress_lang:
-    image: botpress-lang
+    image: botpress/server
     command: bash -c "./duckling -p 8000 & ./bp lang --langDir /botpress/lang --port 3100"
     expose:
       - 3100
